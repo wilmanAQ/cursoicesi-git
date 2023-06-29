@@ -1,0 +1,77 @@
+wilman@win10 MINGW64 ~
+$ cd clone
+bash: cd: clone: No such file or directory
+
+wilman@win10 MINGW64 ~
+$ cd cart
+bash: cd: cart: No such file or directory
+
+wilman@win10 MINGW64 ~
+$ git clone https://github.com/leobusar/ICESI-git-course
+Cloning into 'ICESI-git-course'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 28 (delta 6), reused 7 (delta 2), pack-reused 0
+Receiving objects: 100% (28/28), 8.83 KiB | 201.00 KiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+wilman@win10 MINGW64 ~
+$ git clone https://github.com/wilmanAQ/cursoicesi-git~
+Cloning into 'cursoicesi-git~'...
+remote: Repository not found.
+fatal: repository 'https://github.com/wilmanAQ/cursoicesi-git~/' not found
+
+wilman@win10 MINGW64 ~
+$ git clone https://github.com/wilmanAQ/cursoicesi-git
+Cloning into 'cursoicesi-git'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 13 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (13/13), 4.30 KiB | 1.43 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+wilman@win10 MINGW64 ~
+$ cd c
+Clase2_analisi_cuantitativo.txt     Cookies/
+Clase2_estadistica.ipynb            clase2_analisis_cuantitativo.ipynb
+Configuración local/                cursoicesi-git/
+Contacts/
+
+wilman@win10 MINGW64 ~
+$ cd cursoicesi-git/
+
+wilman@win10 MINGW64 ~/cursoicesi-git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+wilman@win10 MINGW64 ~/cursoicesi-git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+wilman@win10 MINGW64 ~/cursoicesi-git (main)
+$ git add README.md
+
+wilman@win10 MINGW64 ~/cursoicesi-git (main)
+$ git commit -m "Agregue una ciudad"
+[main 6cac479] Agregue una ciudad
+ 1 file changed, 2 insertions(+)
+
+wilman@win10 MINGW64 ~/cursoicesi-git (main)
+$ git log
+commit 6cac479c6d721cd140d6623ffe6b2a60aee14790 (HEAD -> main)
+Author: wilmanAq <wilmanaquinoez@gmail.com>
+Date:   Wed Jun 28 20:33:07 2023 -0500
+
